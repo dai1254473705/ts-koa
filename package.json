@@ -1,0 +1,27 @@
+{
+  "name": "ts-koa",
+  "version": "1.0.0",
+  "description": "https://blog.csdn.net/zhangda89/article/details/82751392",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "build": "npm run tslint && tsc",
+    "watch": "cross-env nodemon --watch './src/**/*' -e ts --exec 'ts-node' ./src/server.ts",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
+  }
+}

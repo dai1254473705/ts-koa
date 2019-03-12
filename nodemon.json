@@ -1,0 +1,9 @@
+{
+  "delay": "0",
+  "ignore": [
+      "./test/*",
+       "./docs/*",
+       "./node_modules/*",
+       "./dist/*"
+    ]
+}
